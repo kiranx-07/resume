@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiran M - Resume</title>
+  <style>
+    :root {
+      --primary: #004b8d;
+      --secondary: #e9f1f7;
+      --accent: #0077cc;
+      --text: #333;
+      --light: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--secondary);
+      color: var(--text);
+      padding: 40px 20px;
+    }
+
+    .resume {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: var(--light);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .left {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .left h1 {
+      font-size: 2em;
+      line-height: 1.2;
+    }
+
+    .left p {
+      font-size: 0.95em;
+    }
+
+    .section-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .right {
+      padding: 30px 25px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      font-size: 1.5em;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+
+      .left {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume">
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <h1>Kiran M</h1>
+      <p><strong>Email:</strong> kiran@example.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Location:</strong> Bangalore, India</p>
+      <div>
+        <p class="section-title">Languages</p>
+        <p>English, Kannada, Hindi</p>
+      </div>
+      <div>
+        <p class="section-title">Hobbies</p>
+        <p>Dancing, Football, Workouts</p>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+      <div class="section">
+        <h2>Objective</h2>
+        <p>To obtain a challenging position in a reputable organization to expand my learnings, knowledge, and skills.</p>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>B.E. in Computer Science</strong><br>
+        XYZ College of Engineering, Bangalore<br>
+        2021 - 2025 | CGPA: 8.5/10</p>
+      </div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, C++</li>
+          <li>MongoDB, Node.js, Express</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Book My Slot:</strong> AI-based parking slot booking app</li>
+          <li><strong>Faculty Feedback System:</strong> Full-stack web app for faculty feedback</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Top 10 finalist in ABC Hackathon 2024</li>
+          <li>1st Prize in Inter-college Coding Challenge</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
